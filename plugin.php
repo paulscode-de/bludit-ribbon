@@ -48,7 +48,7 @@ class pluginRibbon extends Plugin {
     // Load js plugin in public theme
     public function siteBodyEnd() {
         $html = '<div class="' . htmlentities($this->getValue('type')) . '">' . PHP_EOL;
-        $html .= '<a href="' . htmlentities($this->getValue('url')) . '">' . htmlentities($this->getValue('title')) . '</a>' . PHP_EOL;
+        $html .= '<a href="' . htmlentities($this->getValue('url')) . '" target="_blank">' . htmlentities($this->getValue('title')) . '</a>' . PHP_EOL;
         $html .= '</div>' . PHP_EOL;
 
         return $html;
